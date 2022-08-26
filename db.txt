@@ -22,6 +22,7 @@ drivetrain - string - VARCHAR(3) - NULL
 pollution_class(CO2/mi) - float - FLOAT(6, 2) - NOTNULL
 pollution_class(CO2/km) - float - FLOAT(6, 2) - NOTNULL
 
+color - string - VARCHAR(20) - NOTNULL
 current_mileage(mi) - integer - MEDIUMINT - NOTNULL
 current_kilometres(km) - integer - MEDIUMINT - NOTNULL
 interior_condition - string - VARCHAR(15) - NULL
