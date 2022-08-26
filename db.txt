@@ -1,0 +1,56 @@
+Table name: USED_CAR_DEALERSHIP;
+
+car_id - integer - MEDIUMINT - PRIMARY_KEY - NOTNULL - AUTO_INCREMENT - UNIQUE
+
+car_brand - string - VARCHAR(15) - NOTNULL
+brand_group - string - VARCHAR(15) - NULL
+brand_country - string VARCHAR(15) - NULL
+car_model - string  - VARCHAR(15) - NOTNULL
+car_type - string  - VARCHAR(10) - NULL
+construction_year - date - DATE - NOTNULL
+new_driver_friendly - boolean - DEFAULT(0)
+seats_number - integer - TINYINT - NULL
+doors_number - integer - TINYINT - NULL
+fuel_type - string  - VARCHAR(12) - NOTNULL
+fuel_tank_capacity(L) - integer - TINYINT - NULL
+trunk_capacity(L) - integer - SMALLINT - NULL
+engine_type - string - VARCHAR(20) - NULL
+engine_liter(L) - float - FLOAT(3,1) - NOTNULL
+horsepower(hp) - integer - SMALLINT - NOTNULL
+transmission_type - string - VARCHAR(16) - NOTNULL
+drivetrain - string - VARCHAR(3) - NULL
+pollution_class(CO2/mi) - float - FLOAT(6, 2) - NOTNULL
+pollution_class(CO2/km) - float - FLOAT(6, 2) - NOTNULL
+
+current_mileage(mi) - integer - MEDIUMINT - NOTNULL
+current_kilometres(km) - integer - MEDIUMINT - NOTNULL
+interior_condition - string - VARCHAR(15) - NULL
+exterior_condition - string - VARCHAR(15) - NULL
+major_interior_damages - string - VARCHAR(255) - NULL
+major_exterior_damages - string - VARCHAR(255) - NULL
+esthetic_package - string - VARCHAR(255) - NULL
+performance_package - string - VARCHAR(255) - NULL
+security_package - string - VARCHAR(255) - NULL
+optionals - string - TEXT - NULL
+is_tuned - boolean - DEFAULT(0)
+is_special/limited_edition - boolean - DEFAULT(0)
+
+is_imported - boolean - DEFAULT(0)
+ex_owner_No - integer - TINYINT - NOTNULL
+is_plated_already - boolean - DEFAULT(1)
+plate - string - VARCHAR(10) - NULL
+are_taxes_paid - boolean - DEFAULT(1)
+is_car_crashed - boolean - DEFAULT(0)
+last_manteinance - date - DATE - NOTNULL
+is_manteinance_history_available - boolean - DEFAULT(1)
+tires_percentage(%) - integer - TINYINT - NULL
+brake_percentage(%) - integer - TINYINT - NULL
+
+brand_new_price($) - integer  - MEDIUMINT - NULL
+average_price($) - integer - MEDIUMINT - NULL
+price($) - integer - MEDIUMINT - NOTNULL
+sale($)  - integer - MEDIUMINT - NULL
+brand_new_price(€) - integer - MEDIUMINT - NULL
+average_price(€) - integer - MEDIUMINT - NULL
+price(€) - integer - MEDIUMINT - NOTNULL
+sale(€) - integer - MEDIUMINT - NULL
