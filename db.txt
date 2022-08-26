@@ -4,14 +4,14 @@ car_id - integer - MEDIUMINT - PRIMARY_KEY - NOTNULL - AUTO_INCREMENT - UNIQUE
 
 car_brand - string - VARCHAR(15) - NOTNULL
 brand_group - string - VARCHAR(15) - NULL
-brand_country - string VARCHAR(15) - NULL
-car_model - string  - VARCHAR(15) - NOTNULL
-car_type - string  - VARCHAR(10) - NULL
+brand_country - string - VARCHAR(15) - NULL
+car_model - string - VARCHAR(15) - NOTNULL
+car_type - string - VARCHAR(10) - NULL
 construction_year - date - DATE - NOTNULL
 new_driver_friendly - boolean - DEFAULT(0)
 seats_number - integer - TINYINT - NULL
 doors_number - integer - TINYINT - NULL
-fuel_type - string  - VARCHAR(12) - NOTNULL
+fuel_type - string - VARCHAR(12) - NOTNULL
 fuel_tank_capacity(L) - integer - TINYINT - NULL
 trunk_capacity(L) - integer - SMALLINT - NULL
 engine_type - string - VARCHAR(20) - NULL
