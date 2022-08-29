@@ -7,7 +7,7 @@ brand_group - string - VARCHAR(15) - NULL
 brand_country - string - VARCHAR(15) - NULL
 car_model - string - VARCHAR(15) - NOTNULL
 car_type - string - VARCHAR(10) - NULL
-construction_year - date - DATE - NOTNULL
+construction_year - date - YEAR - NOTNULL
 new_driver_friendly - boolean - DEFAULT(0)
 seats_number - integer - TINYINT - NULL
 doors_number - integer - TINYINT - NULL
